@@ -10,11 +10,14 @@
     "pg": "^8.6.0",
     "sequelize": "^6.6.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "jest": "^27.0.5"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js",
-    "migrate": "node ./src/bin/migrate.js"
+    "migrate": "node ./src/bin/migrate.js",
+    "test2": "jest"
   },
   "keywords": [],
   "author": "",

@@ -1,7 +1,7 @@
 const _express = require('express');
 const _server = _express();
 
-var db = require('./src/database');
+var ibm_sum = require('./src/Models/ibm_sum');
 
 const _port = 5000;
 
@@ -13,7 +13,7 @@ _server.get('/retoibm/sumar/:sumando01/:sumando02', function(request, response) 
 
     
     if (typeof _resultado !== "undefined" && _resultado!==null && !isNaN(_resultado)){    
-      db.ibm_sum.create({
+      ibm_sum.model.create({
         addend1:_sumando01,
         addend2:_sumando02,
         sum: _resultado
