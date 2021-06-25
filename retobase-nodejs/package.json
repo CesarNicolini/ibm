@@ -6,12 +6,15 @@
   "dependencies": {
     "ejs": "^2.6.1",
     "express": "^4.16.4",
-    "nodemon": "^1.18.10"
+    "nodemon": "^1.18.10",
+    "pg": "^8.6.0",
+    "sequelize": "^6.6.2"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "migrate": "node ./src/bin/migrate.js"
   },
   "keywords": [],
   "author": "",
